@@ -1,0 +1,217 @@
+*{
+  box-sizing: border-box;
+}
+a{
+  cursor: pointer;
+}
+body{
+  color: #222;
+}
+img{
+  max-width: 100%;
+}
+main{
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+header a{
+  text-decoration:none;
+  color: inherit;
+}
+header a.logo{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+header nav{
+  display:flex;
+  gap: 24px;
+}
+
+.post-card {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 2%;
+  @media (max-width: 768px) {
+    width: 90%; 
+    margin-left:5%
+  }
+}
+
+
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; /* Adjust this as needed */
+  margin: auto; /* Adjust the negative margin as needed */
+}
+
+
+/* PostDetail.css */
+
+/* Media query for small devices (max-width: 767px) */
+@media (max-width: 767px) {
+  .comment {
+    width: 90%;
+  }
+  .add-post {
+    width: 90%;
+  }
+}
+
+/* Media query for medium devices (min-width: 768px and max-width: 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .comment {
+    width: 80%;
+  }
+  .add-post {
+    width: 80%;
+  }
+  
+}
+
+/* Media query for large devices (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .comment {
+    width: 70%;
+  }
+  .add-post {
+    width: 70%;
+  }
+}
+.comments-section {
+  margin:2%;
+}
+
+.comment-div {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+
+.comment-author {
+  font-weight: bold;
+  color: #333;
+}
+
+.comment-text {
+  color: #555;
+}
+
+
+/* AddPost.css */
+
+.add-post {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #555;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: none;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.like-button {
+  display: flex;
+  align-items: center;
+  border-width: 1px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.comment-button {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+
+
+
+
+.like-button svg,
+.comment-button svg {
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+
+.like-button:hover,
+.comment-button:hover {
+  background-color:white /* Slightly darker blue on hover */
+}
